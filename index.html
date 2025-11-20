@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Brew & Co.</title>
+    <style>
+        /* Simple Reveal Animation Styles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Image specific reveal */
+        .image-bar img {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .image-bar img.revealed,
+        .image-bar img.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2 class="reveal">logo</h2>
+        <div class="links">
+            <a href="#about" class="reveal">About us</a>
+            <a href="#" class="reveal">Contact</a>
+        </div>
+        <div class="shop">
+            <a href="#shop"><button class="reveal">Shop now</button></a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="home-text">
+            <h1 class="reveal">Brew & Co.</h1>
+            <p class="reveal">Your daily dose of freshly brewed coffee</p>
+            <div class="image-bar">
+                <img src="images/pic-1.jpg" alt="pic-1" class="reveal">
+                <img src="images/pic-2.jpg" alt="pic-2" class="reveal">
+                <img src="images/pic-3.jpg" alt="pic-3" class="reveal">
+                <img src="images/pic-4.jpg" alt="pic-4" class="reveal">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <div class="text">
+                    <h1 class="scroll-reveal">About us</h1>
+                    <p class="scroll-reveal">At Brew & Co., our story begins with a simple belief: that coffee is more
+                        than a drink—it's a
+                        connection. We're a neighborhood hub where the rich, comforting aroma of freshly roasted beans
+                        meets
+                        the warmth of familiar faces. We meticulously source ethical, single-origin beans and craft each
+                        cup
+                        with care, hoping to be the highlight of your daily ritual. Come for the coffee, stay for the
+                        community.</p>
+                    <br><br>
+                    <p class="scroll-reveal">- Brew & Co.(Manager)</p>
+                </div>
+                <div class="about-img">
+                    <img src="images/about.jpg" alt="about" class="scroll-reveal">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="shop" class="scroll-reveal">
+        <div class="shop-container">
+            <h1>Our Products</h1>
+            <div class="shop-items">
+                <div class="item-card">
+                    <img src="images/pic-1.jpg" alt="coffee1">
+                    <div class="details">
+                        <h3>Black Coffee</h3>
+                        <p>$12.99</p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/pic-2.jpg" alt="coffee2">
+                    <div class="details">
+                        <h3>Espresso</h3>
+                        <p>$14.99</p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/pic-3.jpg" alt="coffee3">
+                    <div class="details">
+                        <h3>Iced coffee</h3>
+                        <p>$13.99</p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="images/pic-4.jpg" alt="coffee4">
+                    <div class="details">
+                    <h3>Iced coffee & Savory</h3>
+                    <p>$15.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact us</h2>
+                <p>Email: example@gmail.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About us</a>
+                <a href="#shop">Shop now</a>
+            </div>
+            <div class="terms-conditions">
+                <h2>Terms & Conditions</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+
+    </footer>
+    </section>
+    <script src="script/script.js">
+    </script>
+</body>
+
+</html>
